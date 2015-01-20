@@ -47,15 +47,29 @@ public class Main {
 					file2.delete();
 					break;
 				case 'l':
-					System.out.println("hand_left");
-					obj = new KeyboarbInteraction("hand_left", timestamp);
+					System.out.println("slap_left");
+					obj = new KeyboarbInteraction("slap_left", timestamp);
 					writer.printf(obj.getDataFormat());
 					file.close();
 					objSend.send();
 					break;
 				case 'r':
-					System.out.println("hand_right");
-					obj = new KeyboarbInteraction("hand_right", timestamp);
+					System.out.println("slap_right");
+					obj = new KeyboarbInteraction("slap_right", timestamp);
+					writer.printf(obj.getDataFormat());
+					file.close();
+					objSend.send();
+					break;
+				case 'b':
+					System.out.println("slap_bottom");
+					obj = new KeyboarbInteraction("slap_bottom", timestamp);
+					writer.printf(obj.getDataFormat());
+					file.close();
+					objSend.send();
+					break;
+				case 't':
+					System.out.println("slap_top");
+					obj = new KeyboarbInteraction("slap_top", timestamp);
 					writer.printf(obj.getDataFormat());
 					file.close();
 					objSend.send();
